@@ -793,6 +793,7 @@ p,
   line-height: 1.5;
   display: block;
   margin-top: 0;
+  font-family: 'Overpass', sans-serif;
   margin-bottom: 16px; }
   @media (min-width: 40.0625em) {
     p,
