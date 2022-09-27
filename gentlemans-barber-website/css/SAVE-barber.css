@@ -1,0 +1,40 @@
+/* Headings */
+h1,h2,h3,
+.barber-heading {
+  font-family: 'Playball', cursive;
+  font-weight: 400;
+}
+
+
+.barber-button {
+background-color: #ffffff;
+    color: #212b32;
+    border: 2px #000000 solid;
+border-radius: 2px;
+    box-shadow: 0 4px 0 #000000;
+    box-sizing: border-box;
+	cursor: pointer;
+    display: inline-block;
+    font-weight: 400;
+    margin-top: 0;
+    padding: 12px 16px;
+    position: relative;
+    text-align: center;
+    vertical-align: top;
+    width: auto;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 500px) {
+#mobileshow  {
+display: none !important;}
+}
+
+
+@media only screen and (max-width: 500px) {
+#mobilehide  {
+display: none !important;}
+}
+
+
