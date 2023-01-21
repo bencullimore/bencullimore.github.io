@@ -2177,7 +2177,7 @@ b {
  * Button variations
  */
 .nhsuk-button--secondary {
-  background-color: #425563;
+  background-color: #5a5f63;
   box-shadow: 0 4px 0 #232e35; }
   .nhsuk-button--secondary:hover, .nhsuk-button--secondary:focus {
     background-color: #384854; }
@@ -4217,8 +4217,7 @@ b {
  * 2. Adds a border between the header and hero, if required
  */
 .nhsuk-hero {
-  background-color:#21ff006b ;
-  color: #ffffff;
+  background-color:#fff ;
   position: relative;
   /* [1] */ }
   @media print {

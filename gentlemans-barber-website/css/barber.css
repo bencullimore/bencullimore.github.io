@@ -707,7 +707,7 @@ main .app-list-signage a[href=""] {
 /* Headings */
 h1,h2,h3,
 .barber-heading {
-  font-family: 'Playball', cursive;
+  font-family: 'Lato', sans-serif;
   font-weight: 400;
 }
 
@@ -715,7 +715,6 @@ h1,h2,h3,
 .barber-button {
 background-color: #ffffff;
     color: #212b32;
-    border: 2px #000000 solid;
 border-radius: 2px;
     box-shadow: 0 4px 0 #000000;
     box-sizing: border-box;
@@ -731,6 +730,15 @@ border-radius: 2px;
     text-transform: uppercase;
     text-decoration: none;
 }
+
+
+.barber-button--secondary {
+  background-color: #5a5f63;
+color:#fff;}
+  .barber-button--secondary:hover, .nhsuk-button--secondary:focus {
+    background-color: #384854; }
+  .barber-button--secondary.nhsuk-button--disabled {
+    background-color: #425563; }
 
 @media only screen and (min-width: 500px) {
 #mobileshow  {
