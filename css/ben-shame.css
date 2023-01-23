@@ -40,3 +40,31 @@
     padding: 24px;
     position: relative;
 }
+
+.nhsuk-tag--green {
+    background-color: #cce5d8;
+    border-color: #004c23;
+    border-top-color: rgb(0, 76, 35);
+    border-right-color: rgb(0, 76, 35);
+    border-bottom-color: rgb(0, 76, 35);
+    border-left-color: rgb(0, 76, 35);
+    color: #004c23;
+}
+
+.nhsuk-tag {
+    font-weight: 600;
+    font-size: 14px;
+    font-size: .875rem;
+    line-height: 1;
+    background-color: #cce5d8;
+    border: 1px solid #004c23;
+    color: #004c23;
+    display: inline-block;
+    outline: 2px solid transparent;
+    outline-offset: -2px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+    text-decoration: none;
+}
