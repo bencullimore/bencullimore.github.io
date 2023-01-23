@@ -1,0 +1,42 @@
+.ben-image__img {
+  display: block;
+  width: 50%; }
+
+
+.nhsuk-card--clickable:hover {
+    border-color: #aeb7bd;
+}
+
+.nhsuk-card--clickable {
+    border-bottom-width: 4px;
+}
+
+@media (min-width: 40.0625em)
+.nhsuk-card {
+    margin-bottom: 48px;
+}
+.nhsuk-card {
+    margin-bottom: 40px;
+    background: #fff;
+    border: 1px solid #d8dde0;
+    position: relative;
+    width: 100%;
+}
+
+
+.nhsuk-card__img {
+    border-bottom: 1px solid #f0f4f5;
+    display: block;
+    width: 100%;
+}
+
+
+@media (min-width: 40.0625em)
+.nhsuk-card__content {
+    padding: 32px;
+}
+
+.nhsuk-card__content {
+    padding: 24px;
+    position: relative;
+}
