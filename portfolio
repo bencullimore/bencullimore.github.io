@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Service & Interaction Design Portfolio</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Overpass&family=Overpass+Mono&family=Archivo+Black&display=swap" rel="stylesheet">
+  <style>
+    /* Base styling and fonts */
+    :root {
+      --primary-blue: #0000ff;
+      --font-primary: 'Overpass', sans-serif;
+      --font-secondary: 'Archivo Black', sans-serif;
+      --font-mono: 'Overpass Mono', monospace;
+    }
+    
+    body {
+      margin: 0;
+      font-family: var(--font-primary);
+      line-height: 1.6;
+      color: #333;
+      background: #f9f9f9;
+    }
+    
+    header {
+      background: var(--primary-blue);
+      color: #fff;
+      padding: 1rem 2rem;
+    }
+    
+    header h1 {
+      font-family: var(--font-secondary);
+      margin: 0;
+    }
+    
+    nav {
+      margin-top: 1rem;
+    }
+    
+    nav a {
+      color: #fff;
+      margin-right: 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    
+    section {
+      padding: 2rem;
+      max-width: 960px;
+      margin: auto;
+      background: #fff;
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+    h2 {
+      color: var(--primary-blue);
+      border-bottom: 2px solid var(--primary-blue);
+      padding-bottom: 0.5rem;
+    }
+    
+    /* Case Study Cards */
+    .case-studies {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    
+    .case-study {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 1rem;
+      flex: 1 1 calc(50% - 1rem);
+      background: #fafafa;
+    }
+    
+    .case-study h3 {
+      margin-top: 0;
+      color: var(--primary-blue);
+    }
+    
+    /* Blog posts */
+    .blog-post {
+      border-bottom: 1px solid #ddd;
+      padding: 1rem 0;
+    }
+    
+    .blog-post:last-child {
+      border-bottom: none;
+    }
+    
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #eee;
+      font-size: 0.9rem;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .case-study {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Jane Doe – Service & Interaction Designer</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#case-studies">Case Studies</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a service designer specializing in delivering innovative and user-centred solutions for government departments in the UK. With experience in both service and interaction design, I have led and contributed to a range of digital transformation projects – from designing online appointment systems to streamlining NHS digital services.
+    </p>
+    <h3>Skills & Expertise</h3>
+    <ul>
+      <li>Service Design</li>
+      <li>Interaction Design (UX/Product Design)</li>
+      <li>User Research & Testing</li>
+      <li>Rapid Prototyping</li>
+      <li>Digital Strategy & Transformation</li>
+    </ul>
+    <h3>Availability</h3>
+    <p>
+      <strong>Current engagement:</strong> Working with the NHS on digital service improvements.<br>
+      <strong>Available from:</strong> June 2025.
+    </p>
+  </section>
+  
+  <!-- Case Studies Section -->
+  <section id="case-studies">
+    <h2>Case Studies</h2>
+    <div class="case-studies">
+      <div class="case-study">
+        <h3>Get NHS Advice about COVID-19</h3>
+        <p><strong>Role:</strong> Lead Designer</p>
+        <p>Designed the COVID-19 information experience on the NHS website, ensuring clear and reliable guidance during the pandemic.</p>
+      </div>
+      <div class="case-study">
+        <h3>Online GP Appointment Booking Discovery</h3>
+        <p><strong>Role:</strong> Senior Service Designer</p>
+        <p>Improved the online GP appointment booking process by identifying user pain points and streamlining the experience.</p>
+      </div>
+      <div class="case-study">
+        <h3>Manage Your Referral</h3>
+        <p><strong>Role:</strong> Service & Interaction Designer</p>
+        <p>Revamped a legacy hospital booking service to deliver a modern, user-friendly experience.</p>
+      </div>
+      <div class="case-study">
+        <h3>Find and Access NHS Services Online</h3>
+        <p><strong>Role:</strong> Service & Interaction Designer</p>
+        <p>Enhanced the information architecture on the NHS website, making it easier for users to find relevant services.</p>
+      </div>
+      <div class="case-study">
+        <h3>Design and Build Digital Services for the NHS</h3>
+        <p><strong>Role:</strong> Interaction Designer</p>
+        <p>Created consistency, documentation, guidance, and tools to support the building of digital NHS services.</p>
+      </div>
+      <div class="case-study">
+        <h3>Improving NHS Wifi for Patients</h3>
+        <p><strong>Role:</strong> Service Designer</p>
+        <p>Led a discovery phase to understand NHS wifi implementation and identified opportunities for future improvement.</p>
+      </div>
+      <div class="case-study">
+        <h3>Measuring Probation Digital Services</h3>
+        <p><strong>Role:</strong> Service Designer</p>
+        <p>Developed and implemented a measurement framework to provide a comparable and holistic view of performance.</p>
+      </div>
+      <div class="case-study">
+        <h3>Plan and Manage a Workforce</h3>
+        <p><strong>Role:</strong> Service Designer</p>
+        <p>Led a discovery phase to understand the current processes, tools, and teams within the Probation workforce.</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Blog Section -->
+  <section id="blog">
+    <h2>Blog</h2>
+    <!-- Replace with your actual blog post links and excerpts -->
+    <div class="blog-post">
+      <h3>Design Thinking in Government Digital Services</h3>
+      <p>An exploration of how design thinking transforms digital services in the public sector.</p>
+      <a href="#">Read More &raquo;</a>
+    </div>
+    <div class="blog-post">
+      <h3>Prototyping Techniques for Rapid Testing</h3>
+      <p>Discussing methods and tools for creating quick prototypes to test design ideas effectively.</p>
+      <a href="#">Read More &raquo;</a>
+    </div>
+    <div class="blog-post">
+      <h3>Bridging Service and Interaction Design</h3>
+      <p>How combining service design with interaction design can offer a unique advantage to clients.</p>
+      <a href="#">Read More &raquo;</a>
+    </div>
+  </section>
+  
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>If you'd like to work with me or have any questions, please get in touch:</p>
+    <ul>
+      <li>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></li>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">View my LinkedIn</a></li>
+    </ul>
+  </section>
+  
+  <footer>
+    <p>&copy; 2025 Jane Doe. All rights reserved.</p>
+  </footer>
+</body>
+</html>
