@@ -1,0 +1,133 @@
+<!-- Page 4: results.html with GOV.UK-style step indicators and conditional logic -->
+<!DOCTYPE html>
+<html lang="en" class="govuk-template">
+  <head>
+    <meta charset="utf-8">
+    <title>What you need to provide – FCA registration</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/govuk-frontend@4.7.0/govuk/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/govuk-frontend@4.7.0/govuk/all.min.js"></script>
+    <style>
+      .gem-c-step-nav__step { margin-bottom: 40px; }
+      .gem-c-step-nav__title { margin: 0 0 10px; font-weight: bold; font-size: 1.2em; display: flex; align-items: center; gap: 8px; }
+
+      .gem-c-step-nav__circle {
+        display: inline-block;
+        border-radius: 50%;
+        width: 28px;
+        height: 28px;
+        line-height: 28px;
+        text-align: center;
+        font-weight: bold;
+        background: #1d70b8;
+        color: #fff;
+        font-size: 16px;
+      }
+    </style>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body class="govuk-template__body">
+    <script>window.GOVUKFrontend.initAll()</script>
+    <div class="govuk-width-container">
+      <a href="#" class="govuk-back-link">Back</a>
+
+      <main class="govuk-main-wrapper govuk-main-wrapper--l" id="main-content" role="main">
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-two-thirds">
+
+            <h1 class="govuk-heading-xl">What you need to provide to the FCA</h1>
+            <div id="mlr-warning"></div>
+            <p class="govuk-body govuk-!-padding-bottom-5">Follow these steps to understand what your business must give to the FCA — and when.</p>
+
+            <div class="gem-c-step-nav">
+
+              <div class="gem-c-step-nav__step" id="step-authorisation">
+                <h3 class="govuk-heading-m">
+                  <span class="gem-c-step-nav__circle gem-c-step-nav__circle--number">1</span>
+                  Apply to the FCA
+                </h3>
+                <div class="gem-c-step-nav__panel">
+                  <p>You'll need to send information about your business before you can be authorised.</p>
+                  <ul class="govuk-list govuk-list--bullet ">
+                    <li><a href="#">Tell us about your business model and activities</a></li>
+                    <li><a href="#">Tell us who your controllers and beneficial owners are</a></li>
+                    <li><a href="#">Submit your AML risk assessment and controls</a></li>
+                  </ul>
+                  <p><strong>Estimated application fee:</strong> £1,500 to £5,000 depending on what you do</p>
+                </div>
+              </div>
+
+              <h2 class="govuk-heading-l">Once you're authorised</h2>
+              <div class="gem-c-step-nav__step">
+                <h3 class="govuk-heading-m">
+                  <span class="gem-c-step-nav__circle gem-c-step-nav__circle--number">2</span>
+                  Keep your details up to date
+                </h3>
+                <div class="gem-c-step-nav__panel">
+                  <p>Tell the FCA about important changes to your business or key people.</p>
+                  <ul class="govuk-list govuk-list--bullet">
+                    <li><a href="#">Notify us of business changes</a></li>
+                    <li><a href="#">Update your AML-related contacts or structures</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="gem-c-step-nav__step">
+                <h3 class="govuk-heading-m">
+                  <span class="gem-c-step-nav__circle gem-c-step-nav__circle--number">3</span>
+                  Submit annual returns
+                </h3>
+                <div class="gem-c-step-nav__panel">
+                  <p>Each year you’ll need to report on your activity, risk, and finances.</p>
+                  <ul class="govuk-list govuk-list--bullet">
+                    <li><a href="#">Submit your financial crime report</a></li>
+                    <li><a href="#">Submit your revenue breakdown</a></li>
+                    <li><a href="#">Submit complaints data</a></li>
+                  </ul>
+                  <p><strong>Estimated annual costs:</strong></p>
+                  <ul class="govuk-list govuk-list--bullet">
+                    <li>Annual fee based on your firm’s income and services</li>
+                    <li>Levy for each appointed representative, if you have any</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div>
+                <h2 class="govuk-heading-l">If you plan to close your business</h2>
+                <div>
+                  <p>Let the FCA know if you plan to stop offering regulated services.</p>
+                  <ul class="govuk-list govuk-list--bullet">
+                    <li><a href="#">Start your wind-down process</a></li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const isAuthorised = params.get("authorised") === "yes";
+      const step1 = document.getElementById("step-authorisation");
+      if (isAuthorised && step1) {
+        step1.style.display = "none";
+      }
+
+      const mlrServices = ["accountancy", "audit", "tax", "legal", "trust", "estate", "letting"];
+      const selectedServices = params.getAll("services");
+      const isMLR = selectedServices.some(service => mlrServices.includes(service));
+      if (isMLR) {
+        document.getElementById("mlr-warning").innerHTML = `
+          <div class="govuk-inset-text">
+            Based on the services you selected, your business is likely subject to the <strong>Money Laundering Regulations (MLRs)</strong>.
+            <br>
+            You’ll need to register and comply with MLR requirements. <a class="govuk-link" href="https://www.fca.org.uk/firms/money-laundering-terrorist-financing/registration" target="_blank">Check the FCA’s MLR guidance</a>.
+          </div>
+        `;
+      }
+    </script>
+  </body>
+</html>

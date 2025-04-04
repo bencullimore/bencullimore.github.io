@@ -1,0 +1,59 @@
+<!-- Page 3: volume.html -->
+<!DOCTYPE html>
+<html lang="en" class="govuk-template">
+  <head>
+    <meta charset="utf-8">
+    <title>Step 3: Monthly Transaction Volume</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/govuk-frontend@4.7.0/govuk/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/govuk-frontend@4.7.0/govuk/all.min.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+  </head>
+  <body class="govuk-template__body">
+    <script>window.GOVUKFrontend.initAll()</script>
+    <main class="govuk-main-wrapper" id="main-content" role="main">
+      <div class="govuk-width-container">
+        <div class="govuk-grid-column-two-thirds">
+
+          <div id="volume-section" class="govuk-form-group" style="display:none">
+            <form action="results.html" method="get">
+              <h1 class="govuk-heading-xl">What is your average monthly transaction volume?</h1>
+              <p class="govuk-body">We need this information because you selected payment or e-money services. It helps us determine whether you're a small or authorised payment institution.</p>
+              <label class="govuk-label" for="volume">
+                Enter a whole number in GBP
+              </label>
+              <input class="govuk-input govuk-input--width-10" id="volume" name="volume" type="number" min="0" required>
+              <button class="govuk-button govuk-!-margin-top-4" type="submit">See what you need to provide</button>
+            </form>
+            <p class="govuk-body">
+              <a class="govuk-link" href="authorisation.html">Back</a>
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+    <script>
+      function getQueryParam(param) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.getAll(param);
+      }
+
+      const services = getQueryParam("services");
+      const selectedPayment = services.includes("payment");
+
+      if (!selectedPayment) {
+        // Redirect to results if payment service is not selected
+        const next = new URL("results.html", window.location.href);
+        services.forEach(value => next.searchParams.append("services", value));
+        const auth = getQueryParam("authorised");
+        auth.forEach(value => next.searchParams.append("authorised", value));
+        window.location.href = next.toString();
+      } else {
+        document.getElementById("volume-section").style.display = "block";
+      }
+    </script>
+
+  </body>
+</html>

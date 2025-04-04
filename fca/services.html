@@ -1,0 +1,100 @@
+<!-- Page 1: services.html -->
+<!DOCTYPE html>
+<html lang="en" class="govuk-template">
+  <head>
+    <meta charset="utf-8">
+    <title>Step 1: Business Services</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/govuk-frontend@4.7.0/govuk/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/govuk-frontend@4.7.0/govuk/all.min.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body class="govuk-template__body">
+    <script>window.GOVUKFrontend.initAll()</script>
+
+    <div class="govuk-width-container">
+      <a href="start.html" class="govuk-back-link">Back</a>
+
+      <main class="govuk-main-wrapper" id="main-content" role="main">
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-two-thirds">
+            <form action="authorisation.html" method="get">
+              <h1 class="govuk-heading-l">What services does your business offer?</h1>
+              <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset">
+                  <div id="hint" class="govuk-hint">Select all that apply</div>
+                  <div class="govuk-checkboxes govuk-checkboxes--small">
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="investment" name="services" type="checkbox" value="investment">
+                      <label class="govuk-label govuk-checkboxes__label" for="investment">Investment advice or management</label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="mortgage" name="services" type="checkbox" value="mortgage">
+                      <label class="govuk-label govuk-checkboxes__label" for="mortgage">Mortgage lending or broking</label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="crypto" name="services" type="checkbox" value="crypto">
+                      <label class="govuk-label govuk-checkboxes__label" for="crypto">Cryptoasset services</label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="credit" name="services" type="checkbox" value="credit">
+                      <label class="govuk-label govuk-checkboxes__label" for="credit">Consumer credit (e.g. loans, broking)</label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="insurance" name="services" type="checkbox" value="insurance">
+                      <label class="govuk-label govuk-checkboxes__label" for="insurance">Insurance mediation or advice</label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="payment" name="services" type="checkbox" value="payment">
+                      <label class="govuk-label govuk-checkboxes__label" for="payment">Payment or e-money services</label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="funeral" name="services" type="checkbox" value="funeral">
+                      <label class="govuk-label govuk-checkboxes__label" for="funeral">Funeral plan provision</label>
+                    </div>
+
+                    <!-- MLR-regulated services -->
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="accountancy" name="services" type="checkbox" value="accountancy">
+                      <label class="govuk-label govuk-checkboxes__label" for="accountancy">Accountancy services</label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="audit" name="services" type="checkbox" value="audit">
+                      <label class="govuk-label govuk-checkboxes__label" for="audit">Statutory audit services</label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="tax" name="services" type="checkbox" value="tax">
+                      <label class="govuk-label govuk-checkboxes__label" for="tax">Tax adviser services</label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="legal" name="services" type="checkbox" value="legal">
+                      <label class="govuk-label govuk-checkboxes__label" for="legal">Legal services provider</label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="trust" name="services" type="checkbox" value="trust">
+                      <label class="govuk-label govuk-checkboxes__label" for="trust">Trust or company services provider</label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="estate" name="services" type="checkbox" value="estate">
+                      <label class="govuk-label govuk-checkboxes__label" for="estate">Estate agency</label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="letting" name="services" type="checkbox" value="letting">
+                      <label class="govuk-label govuk-checkboxes__label" for="letting">Letting agency</label>
+                    </div>
+
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="ar" name="services" type="checkbox" value="ar">
+                      <label class="govuk-label govuk-checkboxes__label" for="ar">We operate with Appointed Representatives (ARs)</label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+              <button class="govuk-button" type="submit">Continue</button>
+            </form>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
