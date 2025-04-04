@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Gentleman's Barber</title>
+  <!-- Import Quicksand for body text -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <!-- Import Pinyon Script for h1 and h2 elements -->
+  <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+  <!-- Link external CSS file -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header with 10% gutters -->
+  <header>
+    <div class="container">
+      <div class="inner">
+        <h1>The Gentleman's Barber</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="pricelist.html">Price list</a></li>
+            <li><a href="products.html" class="active">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+    <!-- Main content container with 10% gutters -->
+    <div class="container">
+
+
+      <!-- Row 1: Three Columns (custom styling applied via classes) -->
+      <section class="row custom-row-1">
+        <!-- Left Column: Picture -->
+        <div class="column"> 
+          <img src="square.jpg" alt="Barber shop image">
+        </div>
+        <!-- Middle Column: Affordable Elegance -->
+        <div class="column">
+          <div class="padding-box">
+            <h3>Affordable Elegance</h3>
+            <p class="description">We make every effort to ensure our exceptional service is affordable.</p>
+            <button onclick="location.href='pricelist.html'">Price list</button>
+          </div>
+        </div>
+        <!-- Right Column: Trims and Shaves -->
+        <div class="column with-bg">
+          <img src="rectangle.jpg" alt="Barber shop image">
+          <div class="padding-box">
+            <h3>Trims and Shaves</h3>
+            <p class="description">Trims and shaves from a beard grade all the way to our special cut and shave service.</p>
+            <button onclick="location.href='appointment.html'">Make an appointment</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Row 2: Three Columns (custom styling applied via classes) -->
+      <section class="row custom-row-2">
+        <!-- Left Column: Text Block -->
+        <div class="column">
+          <img src="rectangle.jpg" alt="Barber shop image">
+          <div class="padding-box with-bg">
+            <h3>A new lease of life</h3>
+            <p class="description">There’s been a barber shop at this address for the past 20 years and now we’re giving it a new lease of life.</p>
+          </div>
+        </div>
+        <!-- Middle Column: Image -->
+        <div class="column">
+          <img src="square.jpg" alt="Barber shop image">
+        </div>
+        <!-- Right Column: About -->
+        <div class="column">
+          <div class="padding-box">
+            <h3>About</h3>
+            <p class="description">I get to open a barber shop where it all started for me.</p>
+            <button onclick="location.href='about.html'">About</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Full Width Price List Section (stays inside container) -->
+      <section class="full-width-section">
+        <h2>Price list</h2>
+        <img src="pricelist.jpg" alt="Price list">
+      </section>
+    </div>
+    
+    <!-- Full Width Banner for feedback and social links -->
+    <section class="full-width-banner">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <h2 class="feedback-title">Let us know what you think</h2>
+            <button onclick="location.href='feedback.html'">Give us feedback</button>
+          </div>
+          <div class="column">
+            <h2 class="follow-title">Follow us</h2>
+            <div class="social-buttons">
+              <a href="https://facebook.com" class="social-button" target="_blank" rel="noopener noreferrer">
+                <!-- Facebook Icon -->
+                <svg class="icon facebook-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path fill="#d85349" d="M22.675 0h-21.35C.594 0 0 .593 0 1.326v21.348C0 23.406.594 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.66-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.59l-.467 3.622h-3.123V24h6.116C23.406 24 24 23.406 24 22.674V1.326C24 .593 23.406 0 22.675 0z"/>
+                </svg>
+              </a>
+              <a href="https://x.com" class="social-button" target="_blank" rel="noopener noreferrer">
+                <!-- X Icon -->
+                <svg class="icon x-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <line x1="4" y1="4" x2="20" y2="20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  <line x1="20" y1="4" x2="4" y2="20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </a>
+              <a href="https://instagram.com" class="social-button" target="_blank" rel="noopener noreferrer">
+                <!-- Instagram Icon -->
+                <svg class="icon instagram-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path fill="#d85349" d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.054 1.97.24 2.428.415a4.92 4.92 0 0 1 1.708 1.118 4.92 4.92 0 0 1 1.118 1.708c.175.458.361 1.258.415 2.428.058 1.266.07 1.645.07 4.85s-.012 3.584-.07 4.85c-.054 1.17-.24 1.97-.415 2.428a4.92 4.92 0 0 1-1.118 1.708 4.92 4.92 0 0 1-1.708 1.118c-.458.175-1.258.361-2.428.415-1.266.058-1.645.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.054-1.97-.24-2.428-.415a4.92 4.92 0 0 1-1.708-1.118 4.92 4.92 0 0 1-1.118-1.708c-.175-.458-.361-1.258-.415-2.428C2.175 15.747 2.163 15.368 2.163 12s.012-3.584.07-4.85c.054-1.17.24-1.97.415-2.428A4.92 4.92 0 0 1 3.766 3.014a4.92 4.92 0 0 1 1.708-1.118c.458-.175 1.258-.361 2.428-.415C8.416 2.175 8.796 2.163 12 2.163z"/>
+                  <path fill="currentColor" d="M12 5.838a6.162 6.162 0 1 0 0 12.324A6.162 6.162 0 0 0 12 5.838zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/>
+                  <circle cx="18.406" cy="5.594" r="1.44" fill="currentColor"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    
+    <!-- Google Map Section now in its own container -->
+    <div class="container">
+      <section class="map-section">
+        <iframe
+          src="https://www.google.com/maps?q=388+Kirkstall+Rd,+Burley,+Leeds+LS4+2HG&output=embed"
+          allowfullscreen=""
+          loading="lazy">
+        </iframe>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer with 10% gutters -->
+  <footer>
+    <div class="container">
+      <div class="footer-container">
+        <!-- First Column: Address -->
+        <div class="footer-column">
+          <h3>Address</h3>
+          <hr class="footer-hr" />
+          <p>
+            388 Kirkstall Road<br>
+            Leeds<br>
+            LS4 2HQ<br>
+            Tel: 0113 345 6112<br>
+            info@tgb-leeds.co.uk
+          </p>
+        </div>
+        <!-- Second Column: Menu -->
+        <div class="footer-column">
+          <h3>Menu</h3>
+          <hr class="footer-hr" />
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="pricelist.html">Price List</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <!-- Third Column: Opening Hours -->
+        <div class="footer-column">
+          <h3>Opening Hours</h3>
+          <hr class="footer-hr" />
+          <p>
+            Mon to Thurs – 9am till 7pm<br>
+            Friday – 9am till 6pm<br>
+            Saturday – 9am till 4pm
+          </p>
+        </div>
+        <!-- Fourth Column: Follow Us -->
+        <div class="footer-column">
+          <h3>Follow us</h3>
+          <hr class="footer-hr" />
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <section class="full-width-section footer-bottom">
+      <p>© Copyright 2025 the Gentleman's Barber</p>
+    </section>
+  </footer>
+</body>
+</html>

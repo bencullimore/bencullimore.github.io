@@ -1,0 +1,367 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Apply Pinyon Script with weight 400 to all h1 and h2 elements */
+  h1, h2 {
+    font-family: 'Pinyon Script', cursive;
+    font-weight: 400;
+  }
+  
+  h1 {
+    color: #808285;
+    line-height: 1;
+  }
+  
+  h2 {
+    font-size: 3em;
+    padding-bottom: 1em;
+  }
+  
+  h3 {
+    color: #d85349;
+    font-size: 1.5em;
+    font-weight: 100;
+    padding-bottom: 0.6em;
+  }
+  
+  /* Global container with 10% left/right padding (gutters) */
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 10%;
+    margin: 0 auto;
+  }
+  
+  /* Header styling */
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    z-index: 1000;
+    padding: 15px 0;
+  }
+  
+  header .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 1rem;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 0.5rem;
+    border-bottom: 2px solid transparent;  /* Creates space for the border */
+    transition: border 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    border-bottom: 2px solid #d85349;
+  }
+  
+  nav ul li a.active {
+    font-weight: bold;
+  }
+  
+  /* Main content styling */
+  main {
+    padding-top: 60px; /* Space for the fixed header */
+  }
+  
+  /* Full width hero image (no gutter) */
+  .full-width-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Hero section (inside container) */
+  .hero {
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+  }
+  
+  .hero h1 {
+    font-size: 4.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    color: #d85349;
+  }
+  
+  /* 3-Column Grid Rows */
+  .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+  
+  /* Custom row styling for rows with inline modifications */
+  .custom-row-1 {
+    text-align: center;
+    background-color: #f5f6fa;
+    margin-bottom: 0;
+    gap: 0;
+  }
+  
+  .custom-row-2 {
+    text-align: center;
+    background-color: #f5f6fa;
+    margin-top: 0;
+    gap: 0;
+  }
+  
+  .row img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Padding box for inner content */
+  .padding-box {
+    padding: 20px;
+  }
+  
+  /* Background color for specific columns */
+  .with-bg {
+    background-color: #eaecf1;
+  }
+  
+  /* Full-width Price List Section (inside container) */
+  .full-width-section {
+    margin: 2rem 0;
+    text-align: center;
+  }
+  
+  .full-width-section img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Full-width banner for 'Let us know what you think' and social links */
+  .full-width-banner {
+    width: 100%;
+    background: #13202e;
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+  .full-width-banner .columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  @media (max-width: 768px) {
+    .full-width-banner .columns {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  }
+  
+  .full-width-banner h2 {
+    margin-bottom: 0.8rem;
+    font-size: 1.5rem;
+    font-family: 'Quicksand', sans-serif;
+    color: #fff;
+  }
+  
+  .feedback-title {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  
+  .follow-title {
+    margin-bottom: 0;
+    padding-bottom: 10px;
+  }
+  
+  .full-width-banner button {
+    color: #c7d5e3;
+    background: #243446;
+  }
+  
+  /* Google Map Section */
+  .map-section {
+    margin: 2rem 0;
+    text-align: center;
+  }
+  
+  .map-section iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+  }
+  
+  /* Button styling */
+  button {
+    -webkit-appearance: none;
+    margin: 0;
+    border: none;
+    overflow: visible;
+    font: inherit;
+    color: #ffffff;
+    display: inline-block;
+    box-sizing: border-box;
+    background: #13202e;
+    vertical-align: middle;
+    min-height: 40px;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    padding: 0 33px;
+    border-radius: 3px;
+    overflow: hidden;
+    z-index: 1;
+    font-family: 'Quicksand';
+    font-weight: 300;
+    text-transform: none;
+    letter-spacing: 0;
+    margin-top: 25px;
+  }
+  
+  button:hover {
+    background: #555;
+  }
+  
+  /* Social Buttons */
+  .social-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social-button {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  
+  .social-button .icon {
+    width: 20px;
+    height: 20px;
+    fill: #d85349;
+    stroke: #d85349;
+    transition: fill 0.3s ease, stroke 0.3s ease;
+  }
+  
+  .social-button:hover,
+  .social-button:active,
+  .social-button:focus {
+    background: #d85349;
+  }
+  
+  .social-button:hover .icon,
+  .social-button:active .icon,
+  .social-button:focus .icon {
+    fill: #fff;
+    stroke: #fff;
+  }
+  
+  /* Footer styling */
+  footer {
+    background: #13202e;
+    color: #7f8d9a;
+    padding: 2rem 0 0;
+  }
+  
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+  
+  footer h3 {
+    margin-bottom: 1rem;
+    color: #c7d5e3;
+  }
+  
+  footer ul {
+    list-style: none;
+  }
+  
+  footer ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  footer a {
+    color: #7f8d9a;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer HR styling */
+  .footer-hr {
+    color: #2e3b49;
+    width: 20%;
+    margin-bottom: 20px;
+  }
+  
+  /* Footer bottom section */
+  .footer-bottom {
+    background-color: #0f1823;
+    padding: 40px;
+    margin-bottom: 0;
+    font-size: 12px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .row {
+      grid-template-columns: 1fr;
+    }
+    header .inner,
+    .container,
+    .footer-container {
+      padding: 0 5%;
+    }
+    nav ul {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    nav ul li {
+      margin: 0 0.5rem;
+    }
+    .footer-container {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  }
+  
