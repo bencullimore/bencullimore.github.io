@@ -1,186 +1,260 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="selection:bg-[#838531] selection:text-white">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ben Cullimore | Lead Service Designer</title>
+    <title>Ben Cullimore // Service Design & Strategy</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Overpass:mono,wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="min-h-screen flex flex-col md:border-x border-[#076c00] max-w-[1600px] mx-auto relative">
 
-<!--<div class="status-sticker">
-    <span class="sticker-text">Available from April 2027</span>
-</div>-->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-3 focus:left-3 focus:bg-white focus:text-[#076c00] focus:p-3 focus:border focus:border-[#076c00] focus:z-50 label-mono text-xs uppercase no-underline">
+        Skip to main content
+    </a>
 
-    <header>
-        <h1>Ben Cullimore</h1>
-        <p class="role">Lead Service Designer — Leeds, UK</p>
+    <header class="w-full grid grid-cols-2 md:grid-cols-4 border-b border-schematic-dashed border-b-1 p-3 label-mono text-[#71716a] uppercase">
+        <div>[REF: BC-2026]</div>
+        <div>LOCATION: LEEDS, UK</div>
+        <div class="text-right md:text-left">STATUS: EMPLOYED</div>
+        <div class="text-right flex justify-end items-center gap-1.5">
+            <span class="w-2 h-2 bg-[#838531] rounded-full"></span>
+            <span>UCD_LEAD</span>
+        </div>
     </header>
 
-    <main>
-        <section class="intro swiss-grid">
-            <div class="grid-text-large">
-                <p class="lead-text">
-                    I help organisations find the right problems to solve and support teams to solve them in the right way.
-                </p>
-                <p>
-                    I am user centered design lead based in Leeds, UK with over 20 years experience in; service design, interaction design, UX design, product design, graphic design, design research and strategy.
-                </p>
-                <p>
-                    I'm currently working at <strong>Justice Digital</strong> as a senior service designer, aligning complex policy with digital delivery.
-                </p>
+    <main id="main-content" class="w-full flex-grow">
+        
+        <section class="w-full grid grid-cols-1 lg:grid-cols-12 border-b border-[#076c00] overflow-hidden" aria-label="Introduction and System Graphics">
+            <div class="lg:col-span-7 p-6 md:p-12 flex flex-col justify-between border-b lg:border-b-0 lg:border-r border-[#076c00]">
+                <div>
+                    <span class="schematic-badge badge-mg badge-combo-3">
+                        <span class="badge-dot"></span>
+                        LEAD service designer
+                    </span>
+                    <span class="schematic-badge badge-mg badge-combo-2">
+                        Contractor
+                    </span>
+                    <span class="schematic-badge badge-mg badge-combo-1">
+                        Digital Transformation Expert
+                    </span>
 
+                    <h1 class="font-display hero-title text-black">
+                        ben CULLIMORE<span class="text-[#ff4cb2]">.</span>
+                    </h1>
 
+                    <div class="mt-4 mb-12 flex items-center gap-4 label-mono text-[#71716a]">
+                        <span>[DESIGN portfolio v4]</span>
+                        <span class="h-[1px] bg-[#076c00] flex-grow"></span>
+                        <span>SECTION_00</span>
+                    </div>
+                </div>
+                
+                <div class="space-y-6">
+                    <p class="font-display text-2xl sm:text-3xl md:text-4xl tracking-tight text-black leading-tight max-w-2xl">
+                        I help organisations find the right problems to solve and support teams to solve them in the right way.
+                    </p>
+                    <p class="body-editorial max-w-2xl">
+                        I am a user-centered design lead based in Leeds, UK with over 20 years of experience spanning service design, interaction design, UX, product, and strategy.
+                    </p>
+                    <p class="label-mono text-[#076c00] pt-4 border-t border-dashed border-[#076c00] uppercase">
+                        Current deployment // Senior Service Designer at Justice Digital. Aligning complex policy with delivery frameworks.
+                    </p>
+                </div>
             </div>
-<div class="grid-image">
-    <figure>
-        <img src="images/IMG_0029.jpg" alt="Service mapping visualization">
-        <figcaption>Fig 1.0 — illustration of two people speaking to someone on a laptop.</figcaption>
-    </figure>
-</div>
+
+            <div class="lg:col-span-5 p-6 md:p-12 blueprint-grid panel-blueprint-bg flex flex-col justify-between min-h-[45vh] lg:min-h-0 overflow-hidden relative">
+        
+                <div class="flex justify-between items-start relative z-10">
+                    <div class="initials-badge-badge border border-schematic-dashed border-1 flex items-center justify-center label-mono text-[#838531]">
+                        bc
+                    </div>
+                    <span class="label-mono text-[#71716a] bg-white px-1.5 py-0.5 border border-[#076c00]">[SYSTEM_MATRIX_v4]</span>
+                </div>
+
+                <div id="patternWrapper" class="w-full max-w-[320px] mx-auto my-12 flex-grow flex items-center justify-center min-h-[120px]">
+                    <canvas id="matrixCanvas" class="w-full h-full block">
+                        <p class="sr-only">An abstract, animated matrix graphic displaying changing data grid flow patterns.</p>
+                    </canvas>
+                </div>
+
+                <div class="flex justify-between items-center label-mono text-[#71716a] relative z-10">
+                    <span class="text-[#e27d9a] animate-pulse">● FEED_ACTIVE</span>
+                    <span class="text-[#838531]">UCD_FLOW // GRAPH</span>
+                </div>
+            </div>
         </section>
 
-
-
-
-
-<section class="career-highlights col-12">
-            <h3 class="h2-stark">Career highlights</h3>
-    <div class="highlight-strip">
-        
-        <div class="highlight-card">
-            <div class="card-body">
-                Redesign of the NHS website (nhs.uk), supporting over 60 million users monthly.
+        <section class="w-full border-b border-[#076c00] panel-highlights-bg" aria-label="Core System Highlights">
+            <div class="p-3 border-b border-schematic-dashed border-b-1">
+                <h2 class="section-anchor">/ Career Highlights</h2>
             </div>
-            <hr class="card-divider">
-            <div class="card-meta">01 / NHS DIGITAL</div>
-        </div>
-
-        <div class="highlight-card">
-            <div class="card-body">
-                Driving accessibility and usability improvements for 200+ financial forms.
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 divide-y md:divide-y-0 lg:divide-x divide-[#076c00] bg-white">
+                <div class="p-6 flex flex-col justify-between min-h-[180px]">
+                    <div class="label-mono text-[#838531]">01 / NHS DIGITAL</div>
+                    <p class="body-technical mt-2">Redesign of the NHS website (nhs.uk), supporting over 60 million users monthly.</p>
+                </div>
+                <div class="p-6 flex flex-col justify-between min-h-[180px]">
+                    <div class="label-mono text-[#5b84d4]">02 / FCA</div>
+                    <p class="body-technical mt-2">Driving accessibility and usability improvements for 200+ financial forms.</p>
+                </div>
+                <div class="p-6 flex flex-col justify-between min-h-[180px]">
+                    <div class="label-mono text-[#e27d9a]">03 / NHS DIGITAL</div>
+                    <p class="body-technical mt-2">On a team that created the NHS digital design system (Standards Manual).</p>
+                </div>
+                <div class="p-6 flex flex-col justify-between min-h-[180px]">
+                    <div class="label-mono text-[#076c00]">04 / JUSTICE DIGITAL</div>
+                    <p class="body-technical mt-2">Establishing a measurement framework to align performance with strategic goals.</p>
+                </div>
             </div>
-            <hr class="card-divider">
-            <div class="card-meta">02 / FCA</div>
-        </div>
+        </section>
 
-        <div class="highlight-card">
-            <div class="card-body">
-                On a team that created the NHS digital design system (Standards Manual).
+        <section class="w-full bg-white border-b border-[#076c00]" aria-label="External Publications and Speaking Engagements">
+            <div class="p-4 border-b border-[#076c00] bg-[#f4f4f2] flex justify-between items-center">
+                <h2 class="section-anchor">/ External Publications & Speaking</h2>
+                <span class="label-mono text-[#71716a]">[EXT_REF_DIRECT_LINK]</span>
             </div>
-            <hr class="card-divider">
-            <div class="card-meta">03 / NHS DIGITAL</div>
-        </div>
+            
+            <div class="divide-y divide-schematic-dashed divide-y-1">
+                <a href="https://medium.com/@ben_cullimore/how-i-helped-set-the-vision-for-a-re-platforming-project-32e743120ec5" target="_blank" rel="noopener noreferrer" aria-label="Read 'Vision for Strategic Transformation' on Medium (opens in a new window)" class="p-4 md:p-6 flex flex-col md:flex-row md:items-center justify-between gap-4 hover:bg-[#e8f80d]/25 group mech-transition no-underline block">
+                    <div class="flex items-center gap-4 flex-wrap md:flex-nowrap">
+                        <span class="schematic-badge badge-sm badge-combo-3">Strategy</span>
+                        <h4 class="font-sans font-bold text-sm md:text-base text-[#1a1a1a] group-hover:text-[#076c00] transition-colors">
+                            Vision for Strategic Transformation
+                        </h4>
+                    </div>
+                    <div class="flex items-center justify-between md:justify-end gap-6 font-mono text-xs text-[#71716a] w-full md:w-auto">
+                        <span>Medium // Oct 2024</span>
+                        <span class="text-xs text-[#838531] font-bold tracking-wider group-hover:translate-x-1 transition-transform" aria-hidden="true">LINK ↗</span>
+                    </div>
+                </a>
 
-        <div class="highlight-card">
-            <div class="card-body">
-                Establishing a measurement framework to align performance with strategic goals.
+                <a href="https://medium.com/@ben_cullimore/from-interaction-to-service-design-my-journey-and-tips-for-those-considering-the-move-ae1fb441d5f5" target="_blank" rel="noopener noreferrer" aria-label="Read 'From Interaction to Service Design' on Medium (opens in a new window)" class="p-4 md:p-6 flex flex-col md:flex-row md:items-center justify-between gap-4 hover:bg-[#e8f80d]/25 group mech-transition no-underline block">
+                    <div class="flex items-center gap-4 flex-wrap md:flex-nowrap">
+                        <span class="schematic-badge badge-sm badge-combo-2">Design career</span>
+                        <h4 class="font-sans font-bold text-sm md:text-base text-[#1a1a1a] group-hover:text-[#076c00] transition-colors">
+                            From Interaction to Service Design
+                        </h4>
+                    </div>
+                    <div class="flex items-center justify-between md:justify-end gap-6 font-mono text-xs text-[#71716a] w-full md:w-auto">
+                        <span>Medium // Oct 2024</span>
+                        <span class="text-xs text-[#838531] font-bold tracking-wider group-hover:translate-x-1 transition-transform" aria-hidden="true">LINK ↗</span>
+                    </div>
+                </a>
+
+                <a href="https://www.youtube.com/watch?v=Bzs_qJtuxE4&t=2687s" target="_blank" rel="noopener noreferrer" aria-label="Watch 'NHS Digital Service Manual Show and Tell' video presentation on YouTube (opens in a new window)" class="p-4 md:p-6 flex flex-col md:flex-row md:items-center justify-between gap-4 hover:bg-[#e8f80d]/25 group mech-transition no-underline block">
+                    <div class="flex items-center gap-4 flex-wrap md:flex-nowrap">
+                        <span class="schematic-badge badge-sm badge-combo-1">Show & tell</span>
+                        <h4 class="font-sans font-bold text-sm md:text-base text-[#1a1a1a] group-hover:text-[#076c00] transition-colors">
+                            NHS Digital Service Manual Show & Tell
+                        </h4>
+                    </div>
+                    <div class="flex items-center justify-between md:justify-end gap-6 font-mono text-xs text-[#71716a] w-full md:w-auto">
+                        <span>YouTube // Jul 2019</span>
+                        <span class="text-xs text-[#838531] font-bold tracking-wider group-hover:translate-x-1 transition-transform" aria-hidden="true">WATCH ↗</span>
+                    </div>
+                </a>
+
+                <a href="https://digital.nhs.uk/blog/transformation-blog/2019/the-nhs-digital-service-manual-needs-you" target="_blank" rel="noopener noreferrer" aria-label="Read 'The NHS Service Manual Needs You' entry on NHS Digital (opens in a new window)" class="p-4 md:p-6 flex flex-col md:flex-row md:items-center justify-between gap-4 hover:bg-[#e8f80d]/25 group mech-transition no-underline block">
+                    <div class="flex items-center gap-4 flex-wrap md:flex-nowrap">
+                        <span class="schematic-badge badge-sm badge-combo-1">Design systems Advocacy</span>
+                        <h4 class="font-sans font-bold text-sm md:text-base text-[#1a1a1a] group-hover:text-[#076c00] transition-colors">
+                            The NHS Service Manual Needs You
+                        </h4>
+                    </div>
+                    <div class="flex items-center justify-between md:justify-end gap-6 font-mono text-xs text-[#71716a] w-full md:w-auto">
+                        <span>NHS Digital // Sep 2019</span>
+                        <span class="text-xs text-[#838531] font-bold tracking-wider group-hover:translate-x-1 transition-transform" aria-hidden="true">LINK ↗</span>
+                    </div>
+                </a>
+
+                <a href="https://www.youtube.com/watch?v=C8dfgJQ8JEo&t=696s" target="_blank" rel="noopener noreferrer" aria-label="Watch 'NHS.UK Standards and Redesign' video on YouTube (opens in a new window)" class="p-4 md:p-6 flex flex-col md:flex-row md:items-center justify-between gap-4 hover:bg-[#e8f80d]/25 group mech-transition no-underline block">
+                    <div class="flex items-center gap-4 flex-wrap md:flex-nowrap">
+                        <span class="schematic-badge badge-sm badge-combo-2">Design standards</span>
+                        <h4 class="font-sans font-bold text-sm md:text-base text-[#1a1a1a] group-hover:text-[#076c00] transition-colors">
+                            NHS.UK Standards & Redesign
+                        </h4>
+                    </div>
+                    <div class="flex items-center justify-between md:justify-end gap-6 font-mono text-xs text-[#71716a] w-full md:w-auto">
+                        <span>YouTube // Feb 2019</span>
+                        <span class="text-xs text-[#838531] font-bold tracking-wider group-hover:translate-x-1 transition-transform" aria-hidden="true">WATCH ↗</span>
+                    </div>
+                </a>
+
+                <a href="https://digital.nhs.uk/blog/transformation-blog/2019/icons-avoid-temptation-and-start-with-user-needs" target="_blank" rel="noopener noreferrer" aria-label="Read 'Icons: Starting with User Needs' article on NHS Digital (opens in a new window)" class="p-4 md:p-6 flex flex-col md:flex-row md:items-center justify-between gap-4 hover:bg-[#e8f80d]/25 group mech-transition no-underline block">
+                    <div class="flex items-center gap-4 flex-wrap md:flex-nowrap">
+                        <span class="schematic-badge badge-sm badge-combo-3">Visual design</span>
+                        <h4 class="font-sans font-bold text-sm md:text-base text-[#1a1a1a] group-hover:text-[#076c00] transition-colors">
+                            Icons: Starting with User Needs
+                        </h4>
+                    </div>
+                    <div class="flex items-center justify-between md:justify-end gap-6 font-mono text-xs text-[#71716a] w-full md:w-auto">
+                        <span>NHS Digital // Mar 2019</span>
+                        <span class="text-xs text-[#838531] font-bold tracking-wider group-hover:translate-x-1 transition-transform" aria-hidden="true">LINK ↗</span>
+                    </div>
+                </a>
             </div>
-            <hr class="card-divider">
-            <div class="card-meta">04 / JUSTICE DIGITAL</div>
-        </div>
+        </section>
 
+        <section class="w-full p-6 md:p-12 bg-[#ffe9f8] grid grid-cols-1 lg:grid-cols-12 gap-6 items-center" style="padding-bottom: 84px;" aria-label="Contact and Channels">
+            <div class="lg:col-span-8">
+                <h4 class="font-display text-xl md:text-3xl tracking-tighter text-black leading-tight">
+                    Want to discuss service design, strategy, or national-scale digital transformation?
+                </h4>
+            </div>
+            <div class="lg:col-span-4 flex flex-col sm:flex-row gap-3 label-mono uppercase">
+                <a href="mailto:bencullimore@gmail.com" class="flex-grow p-3 text-center bg-[#838531] text-white border border-[#838531] hover:bg-black hover:border-black mech-transition">
+                    EMAIL ME
+                </a>
+                <a href="https://www.linkedin.com/in/benjamincullimore/" class="flex-grow p-3 text-center bg-white text-black border border-[#076c00] hover:bg-black hover:text-white mech-transition">
+                    connect on LINKEDIN
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="preview-container" class="fixed right-12 bottom-12 w-64 h-64 border border-[#076c00] bg-white p-3 hidden lg:flex flex-col opacity-0 pointer-events-none mech-transition z-40 shadow-lg" aria-hidden="true">
+        <div class="w-full bg-[#f4f4f2] blueprint-grid flex-grow flex items-center justify-center overflow-hidden border border-schematic-dashed border-1 relative">
+            <div id="preview-img-01" class="absolute inset-0 hidden flex-col justify-between p-3 label-mono text-[#838531]">
+                <div class="w-full flex justify-between"><span>[MTRX_A]</span><span>● EN_REG</span></div>
+                <div class="w-16 h-16 rounded-full border border-dashed border-[#838531] mx-auto flex items-center justify-center animate-[spin_20s_linear_infinite]">
+                    <div class="w-2 h-2 bg-[#e27d9a] rounded-full"></div>
+                </div>
+                <span>STATUS: SIGNAL_NORM_01</span>
+            </div>
+            <div id="preview-img-02" class="absolute inset-0 hidden flex-col justify-between p-3 label-mono text-[#5b84d4]">
+                <div class="w-full flex justify-between"><span>[MTRX_B]</span><span>▲ COV_SYS</span></div>
+                <div class="w-full h-12 bg-white border border-[#076c00] flex items-center justify-around px-2">
+                    <span class="w-3 h-3 rounded-full bg-[#5b84d4]"></span>
+                    <span class="w-3 h-3 rounded-full bg-[#e27d9a]"></span>
+                    <span class="w-3 h-3 rounded-full bg-[#838531]"></span>
+                </div>
+                <span>STATUS: OVERLAY_TRUE</span>
+            </div>
+        </div>
+        <div class="mt-2 text-[9px] font-mono flex justify-between text-[#71716a]">
+            <span>SCHEMA_VIEW</span>
+            <span>ID_00</span>
+        </div>
     </div>
-</section>
 
-
-<section class="case-studies">
-    <h2>Case Studies</h2>
-
-    <p><i>→ 🄲🅞🅼🄘ⓝ⒢ soon</i></p>
-    
-    <!--<div class="project">
-        <a href="case-study.html">
-            <div class="p-header">
-                <span class="p-number">01/</span>
-                <span class="p-title">Justice Digital Transformation</span>
-            </div>
-            <span class="p-meta">MoJ / 2024</span>
-        </a>
-    </div>-->
-
-    <!--<div class="project">
-        <a href="case-study-nhs.html">
-            <div class="p-header">
-                <span class="p-number">02/</span>
-                <span class="p-title">NHS COVID-19 national information service</span>
-            </div>
-            <span class="p-meta">NHS / 2022</span>
-        </a>
-    </div>-->
-</section>
-
-<section class="resources">
-            <h3 class="h2-stark">Writing & Speaking</h3>
-    <div class="grid-12 resource-log">
-        
-        <div class="col-6 resource-col">
-            <h3 class="category-label">/ Publications</h3>
-            <ul class="resource-list">
-                <li>
-                    <a href="https://medium.com/@ben_cullimore/how-i-helped-set-the-vision-for-a-re-platforming-project-32e743120ec5" target="_blank">
-                        <span class="link-text">Vision for Strategic Transformation ◳</span>
-                        <span class="link-meta">Medium / Oct 2024 / Ref: ART-05</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://medium.com/@ben_cullimore/from-interaction-to-service-design-my-journey-and-tips-for-those-considering-the-move-ae1fb441d5f5" target="_blank">
-                        <span class="link-text">From Interaction to Service Design ◳</span>
-                        <span class="link-meta">Medium / Oct 2024 / Ref: ART-04</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://digital.nhs.uk/blog/transformation-blog/2019/the-nhs-digital-service-manual-needs-you" target="_blank">
-                        <span class="link-text">The NHS Service Manual Needs You ◳</span>
-                        <span class="link-meta">NHS Digital / Sep 2019 / Ref: ART-03</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://digital.nhs.uk/blog/transformation-blog/2019/icons-avoid-temptation-and-start-with-user-needs" target="_blank">
-                        <span class="link-text">Icons: Starting with User Needs ◳</span>
-                        <span class="link-meta">NHS Digital / Mar 2019 / Ref: ART-02</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="col-6 resource-col">
-            <h3 class="category-label">/ Public Speaking</h3>
-            <ul class="resource-list">
-                <li>
-                    <a href="https://www.youtube.com/watch?v=Bzs_qJtuxE4&t=2687s" target="_blank">
-                        <span class="link-text">NHS Digital Service Manual Show & Tell ▷</span>
-                        <span class="link-meta">YouTube / July 2019 / Ref: TLK-02</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=C8dfgJQ8JEo&t=696s" target="_blank">
-                        <span class="link-text">NHS.UK Standards & Redesign ▷</span>
-                        <span class="link-meta">YouTube / Feb 2019 / Ref: TLK-01</span>
-                    </a>
-                </li>
-            </ul>
+    <div class="w-full fixed bottom-0 left-0 border-t border-[#076c00] overflow-hidden bg-[#838531] text-white py-2 label-mono tracking-widest uppercase select-none z-40" role="contentinfo" aria-label="System Marquee Status Display">
+        <div class="flex whitespace-nowrap gap-8 animate-marquee">
+            <span>✦ BEN CULLIMORE // LEAD SERVICE DESIGNER</span>
+            <span>✦ ALIGNING COMPLEX POLICY WITH DIGITAL DELIVERY</span>
+            <span>✦ 20+ YEARS USER CENTERED DESIGN EXPERIENCE</span>
+            <span>✦ BEN CULLIMORE // LEAD SERVICE DESIGNER</span>
+            <span>✦ ALIGNING COMPLEX POLICY WITH DIGITAL DELIVERY</span>
+            <span>✦ 20+ YEARS USER CENTERED DESIGN EXPERIENCE</span>
         </div>
     </div>
-</section>
 
-
-<section class="cta-passage col-12">
-    <div class="cta-quote-box">
-        <p>
-            <i>Want to discuss service design, strategy, or national-scale digital transformation? </i></p>
-            <p>            <a href="mailto:bencullimore@gmail.com" class="cta-inline-link">Email me</a> 
-            or let’s do business on <a href="https://linkedin.com/in/benjamincullimore" class="cta-inline-link">LinkedIn</a>.
-        </p>
-    </div>
-</section>
-
-    <footer>
-        <p>Ben Cullimore &copy; 2026</p>
-        <div class="footer-links">
-            <a href="mailto:bencullimore@gmail.com">Email</a> / <a href="https://linkedin.com/in/benjamincullimore">LinkedIn</a>
-        </div>
-    </footer>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
